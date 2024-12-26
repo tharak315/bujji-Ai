@@ -7,8 +7,8 @@ listening = True
 engine = pyttsx3.init()
 
 #Set your openai api key and customizing the chatgpt role
-openai.api_key = "xyz"
-messages = [{"role": "system", "content": "Your name is Rocky and give answers in 2 lines"}]
+openai.api_key = "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"
+messages = [{"role": "system", "content": "Your name is bujji and give answers in 2 lines"}]
 
 #Customizing The output voice
 voices = engine.getProperty('voices')
@@ -39,7 +39,7 @@ while listening:
             response = recognizer.recognize_google(audio)
             print(response)
            
-            if "rocky" in response.lower():
+            if "bujji" in response.lower():
            
                 response_from_openai = get_response(response)
                 engine.setProperty('rate', 120)
@@ -51,7 +51,7 @@ while listening:
            
                
             else:
-                print("Didn't recognize 'Rocky'.")
+                print("Didn't recognize 'bujji'.")
            
         except sr.UnknownValueError:
             print("Didn't recognize anything.")
