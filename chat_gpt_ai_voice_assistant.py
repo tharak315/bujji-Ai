@@ -44,7 +44,7 @@ while listening:
                 response_from_openai = get_response(response)
                 engine.setProperty('rate', 120)
                 engine.setProperty('volume', volume)
-                engine.setProperty('voice', 'greek')
+                engine.setProperty('voice', 'telugu')
                 engine.say(response_from_openai)
                 engine.runAndWait()
                
